@@ -1,0 +1,234 @@
+/* Global Styles */
+html {
+    background-color: black;
+    width: 485px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: white;
+    min-width: 320px;
+    font-family: 'Ariel', 'Helvetica', sans-serif;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small{
+    font-size: 1em;
+}
+
+nav a{
+    font-size: 1.5em;
+}
+
+h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+h2{
+    font-size: 2em;
+}
+/* End Global Styles */
+
+
+
+/* Start of Header */
+
+header h1{
+    text-align: center;
+    color: #007d7b;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+nav{
+    background-color: black;
+    font-weight: bolder;
+    align-items: center; 
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+
+}
+
+nav li{
+   list-style: none;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav h2{
+    visibility: hidden;
+}
+
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0 0px 0px;
+}
+
+/* End Header */
+
+/* Start About Section */
+
+section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section p{
+    padding-left: 15px;
+}
+
+/* End About Section */
+
+
+/* Start Gallery Section */
+
+figcaption{
+    text-transform: uppercase; 
+}
+
+.top{
+    position: relative;
+    bottom: 270px; 
+    text-align: center;
+
+} 
+.bottom{
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}
+/* End Gallery Section */
+
+
+/* Start Contact Section */
+
+.contact{
+    background-color: black;
+    color: white;
+}
+
+.contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact p{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label{
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #007d7b;
+}
+
+input:last-child{
+    width: 50%;
+    color: white;
+    background-color: #007d7b;
+    margin-left: 120px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* End Contact Section */
+
+/* Start Footer Section */
+
+footer{
+    background-color: black;
+    text-transform: uppercase;
+    text-align: center;  
+    color: white;
+}
+
+/* End Footer Section */
+
+@media screen and (min-width: 880px){
+    html{
+        width: 880px;
+    }
+    header h1{
+        text-align: left;
+    }
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        padding-right: 50px;
+        padding-left: 100px;
+    }
+
+    input{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    html{
+        width: 1300px;
+    }
+    nav{
+        display: flex;
+        justify-content: end;
+        font-weight: bolder;
+    }
+    #gallery figure{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        left: 175px;
+    }
+    input{
+        width: 75%;
+    }
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>TK Photography</title>
 </head>
 <body>
@@ -20,78 +21,78 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="about">
             <h2>About</h2>
-            <p> Hello! 
+            <p> Hello!</p>
+            <p>
                 I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world. </p>
         </section>
-        <section>
+        <section id="gallery">
             <h2>Gallery</h2>
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-        </section>
-        <section>
             <figure>
                 <img src = "images/Chile.png" alt = "image of a beach in Chile at sunset" />
-                <figcaption>Chile, 2001</figcaption>
+                <figcaption class="bottom white">Chile, 2001</figcaption>
             </figure>
             
             <figure>
                 <img src = "images/Guatemala.png" alt = "image of lake near the dock in Guatemala at sunset" />
-                <figcaption>Guatemala, 1997</figcaption>
+                <figcaption class="top white">Guatemala, 1997</figcaption>
             </figure>
             
             <figure>
                 <img src = "images/Hawaii.png" alt = "image of a green mountain near the beach in Hawaii" />
-                <figcaption>Hawaii, 2010</figcaption>
+                <figcaption class="bottom white">Hawaii, 2010</figcaption>
             </figure>
             
             <figure>
                 <img src = "images/Iran.png" alt = "image of sand with pink flowers and mountains in the distance in Iran" />
-                <figcaption>Iran, 1999</figcaption>
+                <figcaption class="top black">Iran, 1999</figcaption>
             </figure>
             
             <figure>
                 <img src ="images/Ireland.png" alt ="image of a green mountain with tress in Ireland" />
-                <figcaption>Ireland, 2012</figcaption>
+                <figcaption class="top black">Ireland, 2012</figcaption>
             </figure>
 
             <figure>
                 <img src = "images/Italy.png" alt ="image of lake and mountain in Italy" />
-                <figcaption>Italy, 2015</figcaption>
+                <figcaption class="bottom black">Italy, 2015</figcaption>
             </figure>
             
             <figure>
                 <img src = "images/Moab-Desert.png" alt ="image of a red rocky mountains during sunrise in Moab-Desert" />
-                <figcaption>Moab Desert, 2020</figcaption>
+                <figcaption class="bottom white">Moab Desert, 2020</figcaption>
             </figure>
             
             <figure>
                 <img src = "images/Rocky-Mountains.png" alt ="image of rocky mountains near the ocean" />
-                <figcaption>Rocky Mountains, 2009</figcaption>
+                <figcaption class="top black">Rocky Mountains, 2009</figcaption>
             </figure>
             
             <figure>
                 <img src = "images/Switzerland.png" alt = "image of a snowy mountains in Switzerland" />
-                <figcaption>Switzerland, 2014</figcaption>
+                <figcaption class="top black">Switzerland, 2014</figcaption>
             </figure>
             
             <figure>
                 <img src = "images/UK.png" alt="image of mountains in the UK" />
-                <figcaption>UK, 2005</figcaption>
+                <figcaption class="top black">UK, 2005</figcaption>
             </figure>
             
             <figure>
                 <img src ="images/USA.png" alt ="image of a flower field in the USA"
                 />
-                <figcaption>USA, 2021</figcaption>
+                <figcaption class="top black">USA, 2021</figcaption>
             </figure>
             
             <figure>
                 <img src ="images/Wyoming.png" alt = "image of a lake with mountains in the back in Wyoming" />
-                <figcaption>Wyoming, 2021</figcaption>
+                <figcaption class="top white">Wyoming, 2021</figcaption>
             </figure>
 
         </section>
+        <section class="contact">
                 <h2>Contact</h2>
                 <p>Please fill out this form and I'll connect with you soon.</p>
                 <form action ="" method="get">
@@ -105,9 +106,10 @@
                     <label for ="message">Message</label>
                     <input type="text" name="message" id="message" placeholder="What can I help you with?" required/>
                     
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit"/>
     
                 </form>
+        </section>
     </main>
     
     <footer>
